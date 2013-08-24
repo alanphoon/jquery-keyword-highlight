@@ -67,5 +67,10 @@ The above inline attributes will then allow the keyword highlight to search for 
 }
 &lt;/style&gt;
 </pre></code>
+
+<h2>Some Limitations</h2>
+
+<p>The plugin only finds whole words only and can not search through portions of words. &nbsp;This includes things such as words surrounded by quotations or ending with a period for example. &nbsp;&nbsp;1. this word will be found &nbsp;2.&nbsp;this word will not be found. --&nbsp;if you search for the keyword &quot;found&quot;, &nbsp;the word &quot;found&quot; will be found. &nbsp;In the second sentence, because of the added period, the word &quot;found&quot; will not be found.</p>
+
 <p>That's it! See <a href="http://www.ampedupdesigns.com/blog/show?bid=57">example here</a> for usage.</p>
 
