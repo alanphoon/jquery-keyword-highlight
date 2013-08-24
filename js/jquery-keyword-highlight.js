@@ -1,5 +1,4 @@
 
-
 (function($) {
   $.fn.extend({
      keywordHighlight: function(options){
@@ -13,6 +12,7 @@
             var words = $(e).html().split(' ');
             var new_content = '';
 
+            //check for inline data attributes.
             var currentKeyword = options.keyword;
             if($(e).attr("data-keyword"))
                 currentKeyword = $(e).attr("data-keyword");
@@ -40,6 +40,7 @@
                 }
 
                 if(found) {
+                  //add span class around found word and add to new content
                   new_content += '<span class="' + currentHighlightClass + '">' + e + '</span>' + ' ';
                 }
                 else
@@ -47,7 +48,7 @@
                   new_content += e  + ' ';
                 }
             }); 
-            $(this).html(new_content);
+            $(this).html(new_content); //place new content back into the targetted element
          });
      }
   });
