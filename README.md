@@ -43,7 +43,9 @@
 </ul>
 <p>Example:</p>
 <pre><code>&#60;div class="highlight-content" data-keyword="lorem" data-caseSensitive="false" data-highlightClass="highlight-circle" &#62;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&#60;/div&#62;</code></pre>
-<p>With the above inline data attributes, you can simply initialize the keyword highlight plugin like:  "  $('.highlight-content').keywordHighlight(); "  The above inline attributes will then allow the keyword highlight to search for the word "lorem" without case sensitivity and give it a highlight class of "highlight-circle".</p>
+<p>With the above inline data attributes, you can simply initialize the keyword highlight plugin like:  
+<pre><code>$('.highlight-content').keywordHighlight();</pre></code>
+The above inline attributes will then allow the keyword highlight to search for the word "lorem" without case sensitivity and give it a highlight class of "highlight-circle".</p>
 
 <p>That's it! See <a href="http://www.ampedupdesigns.com/blog/show?bid=57">example here</a> for usage.</p>
 
