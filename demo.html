@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery Keyword Highlight Demo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <script src="/js/jquery-keyword-hightlight.min.js"></script>
+        
+        <style>
+          .highlight
+          {
+              background-color:#FFFF66;
+              color:#333;
+              padding:2px;
+          }
+          
+          .highlight-circle
+          {
+              border:solid 1px #eee;
+              border-radius:3px;
+              padding:2px;
+              background-color:#eee;
+              color:#333;
+              font-weight:600;
+          }
+        </style>
+        
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".highlight-content").keywordHighlight();
+            });
+        </script>
+        
+    </head>
+    <body>
+        <h3>Jquery Keyword Highlight Example</h3>
+        
+        <div class="highlight-example" data-keyword="the">
+        <p><strong>Searching for &quot;the&quot;</strong><br clear="all" />
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+        </div>
+        
+        <p><strong>Another example searching for &quot;ipsum&quot;&nbsp;with a different custom highlight class:</strong></p>
+        <div class="highlight-example" data-highlightclass="highlight-circle" data-keyword="ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+
+    </body>
+</html>
