@@ -46,7 +46,7 @@
 <p>With the above inline data attributes, you can simply initialize the keyword highlight plugin like:  
 <pre><code>$('.highlight-content').keywordHighlight();</pre></code>
 The above inline attributes will then allow the keyword highlight to search for the word "lorem" without case sensitivity and give it a highlight class of "highlight-circle".</p>
-<p>Here are some sample styles you can use (place in your <head> or your css style sheet):</p>
+<p>Here are some sample styles you can use (place in your &lt;head&gt;or your css style sheet):</p>
 <pre><code>
 &lt;style&gt;
 .highlight
